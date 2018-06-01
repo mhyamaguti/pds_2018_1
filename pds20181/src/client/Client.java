@@ -59,7 +59,6 @@ public class Client {
         }
         if (args.length > 1) {
             String portaStr = args[1];
-            System.out.println("Porta: "+portaStr);
             port = Integer.parseInt(portaStr);
         }
         try {
