@@ -9,6 +9,7 @@ import java.net.*;
 import java.util.*;
 
 public class MultiServer {
+    public static int porta = 9999;
     private String mensagem = null;
     private ArrayList<PrintWriter> lista = new ArrayList<PrintWriter>();    
     
@@ -31,7 +32,6 @@ public class MultiServer {
     public void executa() throws IOException {
         ServerSocket serverSocket = null;
         boolean ouvindo = true;
-        int porta = 9999;
         int contador = 0;
 
         try {
